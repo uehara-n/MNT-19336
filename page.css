@@ -116,7 +116,7 @@ h1 {margin:0; padding:0;z-index:20; position:absolute; width:50%; top:0.2rem;}
 	margin-bottom:2rem;
 }
 
-.is_fixed{
+.is-fixed{
 	position: fixed;
 	top:0;
 	left: 0;
