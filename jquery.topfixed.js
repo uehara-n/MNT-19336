@@ -1,7 +1,8 @@
+
 $(function() {
 	var $win = $(window),
-			$main = $('.slicknav_menu'),
-			$nav = $('#header'),
+			$main = $('#KeyVisual'),
+			$nav = $('#head'),
 			navHeight = $nav.outerHeight(),
 			navPos = $nav.offset().top,
 			fixedClass = 'is-fixed';

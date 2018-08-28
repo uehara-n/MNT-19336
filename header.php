@@ -44,6 +44,7 @@
 <?php if(wp_is_mobile()): ?>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.topfixed.js"></script>
+
 <?php endif; ?>
 
 <!-- グローバルナビ -->

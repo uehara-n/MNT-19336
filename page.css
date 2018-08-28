@@ -121,12 +121,12 @@ h1 {margin:0; padding:0;z-index:20; position:absolute; width:50%; top:0.2rem;}
 	top:0;
 	left: 0;
 	z-index: 2;
-	width: 100%;
+	width: 100%!important;
 }
 
 #head {
 	background:#fff;
-	width:98%;
+	width:100%;
 	margin:0 auto;
 	text-align:left;
 	padding-top:0.8rem;
@@ -139,6 +139,10 @@ h1 {margin:0; padding:0;z-index:20; position:absolute; width:50%; top:0.2rem;}
 	padding:0;
 	/*margin-left:-2.2rem;*/
 	margin-right:1rem;
+}
+
+#head .rogo h1{
+	padding-left: 0.25rem;
 }
 
 #head .rogo img {
