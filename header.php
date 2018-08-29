@@ -40,12 +40,6 @@
 <!--===== //PCだけ読み込まれる =====-->
 
 
-<!--===== SPだけ読み込まれる =====-->
-<?php if(wp_is_mobile()): ?>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.topfixed.js"></script>
-<?php endif; ?>
-
 <!-- グローバルナビ -->
 <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
 <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,6 +49,16 @@
 <!-- ドロワーメニュー -->
 <link href="<?php bloginfo('template_url'); ?>/css/slicknav.css" rel="stylesheet" type="text/css" />
 <!-- //ドロワーメニュー -->
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.topfixed.js"></script>
+
+<!--===== SPだけ読み込まれる =====-->
+<?php if(wp_is_mobile()): ?>
+<link href="<?php bloginfo('template_url'); ?>/css/sp.css" rel="stylesheet" type="text/css" />
+<?php endif; ?>
+<!--===== //SPだけ読み込まれる =====-->
+
 
 <!-- Yahoo Code for your Target List -->
 <script type="text/javascript" language="javascript">
@@ -79,10 +83,19 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
 
 <div class="sp_nav">
 <ul id="menu">
+  <p class="close_btn">
+    <img src="<?php bloginfo('template_url'); ?>/img/header/close.png" class="close_btn" alt="CLOSE" width="350" height="autp">
+  </p>
+  <div class="spmenu-btn">
+    <p class="contact"><a href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_url'); ?>/img/header/contact.png" alt="お問い合わせ" width="144" height="59" /></a></p>
+    <p class="tel"><a href="tel:0582123184"><img src="<?php bloginfo('template_url'); ?>/img/header/tel.png" alt="電話する" width="144" height="59" /></a></p>
+  </div>
 <li><a href="<?php bloginfo('url'); ?>">HOME</a></li>
 <li>サービス内容
 <ul>
 <li><a href="<?php bloginfo('url'); ?>/kakaku">価格表</a></li>
+<li><a href="<?php bloginfo('url'); ?>/smartphone">スマートフォン集客サービス</a></li>
+<li><a href="<?php bloginfo('url'); ?>/">採用ホームページ制作（準備中）</a></li>
 </ul>
 </li>
 <li>ゴッタライドの考え方
@@ -104,6 +117,7 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
 </ul>
 </div>
 
+<div class="wraphead">
 <div id="head">
 <div class="rogo">
 <h1><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/header/rogo.png" alt="建築業界に特化したウェブマーケティング支援 全国150社以上ご支援中！御社のウェブ集客を成功に導く力が、私たちゴッタライド―Gotta-ride―にはあります。" width="293" height="50" /></a></h1>
@@ -119,6 +133,7 @@ var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantit
 <img src="<?php bloginfo('template_url'); ?>/img/header/infomation.png" alt="電話番号　058-212-3184　営業時間9:00～18:00　土日祝定休" width="200" height="40" />
 </div><!-- //end .pc_nav -->
 <br clear="all" />
+</div>
 </div><!-- //end #head -->
 
 
