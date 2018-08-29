@@ -40,6 +40,16 @@
 <!--===== //PCだけ読み込まれる =====-->
 
 
+<<<<<<< HEAD
+=======
+<!--===== SPだけ読み込まれる =====-->
+<?php if(wp_is_mobile()): ?>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.topfixed.js"></script>
+
+<?php endif; ?>
+
+>>>>>>> origin/master
 <!-- グローバルナビ -->
 <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
 <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
